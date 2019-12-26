@@ -4,7 +4,6 @@ function RepoCards(props) {
   function durationTimer(key) {
     return key * 75;
   }
-  console.log(props.repo);
   return (
     <Spring
       from={{ opacity: 0, marginTop: 50, marginRight: -500 }}
