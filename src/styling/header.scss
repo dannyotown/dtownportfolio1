@@ -40,4 +40,10 @@
       margin-top: 2.5%;
     }
   }
+  .headerButton:focus {
+    outline: 0;
+  }
+  .headerButton:active {
+    box-shadow: 2px 2px $lightBlue;
+  }
 }

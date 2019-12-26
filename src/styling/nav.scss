@@ -12,6 +12,9 @@
     flex-flow: row nowrap;
     justify-content: left;
     align-items: center;
+    position: sticky;
+    top: 0px;
+    width: 100%;
     @media screen and (max-width: "600px") {
       padding: 0%;
       #nav1 {
