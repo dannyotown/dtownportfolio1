@@ -5,10 +5,20 @@ import RepoCards from "./Repos";
 function Projects() {
   const [repos, setRepos] = useState([]);
   useEffect(() => {
-    axios
-      .get("https://api.github.com/users/dannyotown/repos")
-      .then(response => setRepos(response.data))
-      .catch(error => console.log(error));
+    document.addEventListener("scroll", () => {
+      let count = 0;
+      if (window.scrollY > 1000 && count === 0) {
+        axios
+          .get("https://api.github.com/users/dannyotown/repos")
+          .then(response => setRepos(response.data))
+          .catch(error => console.log(error));
+        count += 1;
+      } else {
+        return document.removeEventListener("scroll", () => {
+          return true;
+        });
+      }
+    });
   }, []);
   return (
     <>
