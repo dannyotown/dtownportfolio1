@@ -1,0 +1,37 @@
+.MainBody {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  .navBarMain {
+    width: 100%;
+    height: 55px;
+    z-index: 5;
+    padding-left: 5%;
+    background: $lightestBlack;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: left;
+    align-items: center;
+    @media screen and (max-width: "600px") {
+      padding: 0%;
+      #nav1 {
+        width: 100px;
+      }
+    }
+    .navButtons {
+      color: $whiteColor;
+      font-family: $mainFont;
+      font-size: 1.25rem;
+      width: 150px;
+      text-align: center;
+    }
+  }
+  .navLine {
+    width: 100%;
+    height: 2px;
+    background-color: $purpleColor;
+  }
+  .colorChange {
+    color: $purpleColor !important;
+  }
+}

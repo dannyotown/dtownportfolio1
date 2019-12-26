@@ -1,0 +1,48 @@
+.AboutMe {
+  height: 700px;
+  width: 100%;
+  h1 {
+    text-align: center;
+    padding-top: 2%;
+    font-family: $mainFont;
+    font-size: 30pt;
+    color: $grey;
+    font-weight: bolder;
+    @media screen and (max-width: "600px") {
+      padding-top: 8%;
+      font-size: 30pt;
+    }
+  }
+  .AboutUnderline {
+    margin: 0 auto;
+    margin-top: 0.5%;
+    width: 100px;
+    height: 5px;
+    background-color: $grey;
+    @media screen and (max-width: "600px") {
+      margin-top: 1%;
+    }
+  }
+  .AboutMeFlex {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4%;
+    @media screen and (max-width: "1000px") {
+      flex-flow: column nowrap;
+    }
+    .AboutMeText {
+      width: 60%;
+      font-size: 2rem;
+      font-family: $secondaryFont;
+      text-align: center;
+      @media screen and (max-width: "1000px") {
+        width: 100%;
+      }
+    }
+    .AboutMeImage {
+      width: auto;
+    }
+  }
+}

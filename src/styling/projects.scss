@@ -1,0 +1,57 @@
+.Projects {
+  height: 100%;
+  padding-bottom: 2%;
+  width: 100%;
+  background-color: $lightGrey;
+  h1 {
+    text-align: center;
+    padding-top: 2%;
+    font-family: $mainFont;
+    font-size: 30pt;
+    color: $grey;
+    font-weight: bolder;
+    @media screen and (max-width: "600px") {
+      padding-top: 8%;
+      font-size: 30pt;
+    }
+  }
+  .ProjectsUnderline {
+    margin: 0 auto;
+    margin-top: 0.5%;
+    margin-bottom: 2%;
+    width: 100px;
+    height: 5px;
+    background-color: $grey;
+    @media screen and (max-width: "600px") {
+      margin-top: 1%;
+      margin-bottom: 4%;
+    }
+  }
+  .ProjectFlexRepo {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto;
+    align-items: stretch;
+    @media screen and (max-width: "1000px") {
+      grid-template-columns: auto auto auto auto auto auto;
+    }
+    @media screen and (max-width: "800px") {
+      grid-template-columns: auto auto auto auto auto;
+    }
+    @media screen and (max-width: "600px") {
+      grid-template-columns: auto auto auto auto;
+    }
+    height: 800px;
+    .repoText {
+      background-image: url(../img/js.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+      height: auto !important;
+      margin: 0 auto;
+      border: 1px solid white;
+    }
+  }
+}

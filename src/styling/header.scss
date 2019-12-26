@@ -1,0 +1,43 @@
+.headerBox {
+  width: 100%;
+  height: 75%;
+  position: absolute;
+  z-index: 100;
+  top: 5%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  @media screen and (max-width: "800px") {
+    top: 3%;
+  }
+  .headerFont {
+    color: $whiteColor;
+    text-align: center;
+    font-family: $mainFont;
+    font-size: 3rem;
+    position: relative;
+    z-index: 2;
+    @media screen and (max-width: "800px") {
+      font-size: 2.75rem;
+    }
+    .nameSpan {
+      color: $purpleColor;
+    }
+  }
+  .headerButton {
+    width: 225px;
+    height: 30px;
+    font-size: 1.25rem;
+    background: none;
+    color: $whiteColor;
+    border: 2px solid $whiteColor;
+    font-family: $secondaryFont;
+    margin: 0 auto;
+    margin-top: 1%;
+
+    @media screen and (max-width: "800px") {
+      margin-top: 2.5%;
+    }
+  }
+}
