@@ -7,7 +7,7 @@ function Projects() {
   useEffect(() => {
     document.addEventListener("scroll", () => {
       let count = 0;
-      if (window.scrollY > 1000 && count === 0) {
+      if (window.scrollY > 925 && count === 0) {
         axios
           .get("https://api.github.com/users/dannyotown/repos")
           .then(response => setRepos(response.data))
