@@ -27,17 +27,17 @@
   }
   .headerButton {
     width: 225px;
-    height: 30px;
-    font-size: 1.25rem;
+    height: 40px;
+    font-size: 1.5rem;
     background: none;
     color: $whiteColor;
     border: 2px solid $whiteColor;
-    font-family: $secondaryFont;
+    font-family: $mainFont;
     margin: 0 auto;
     margin-top: 1%;
 
     @media screen and (max-width: "800px") {
-      margin-top: 2.5%;
+      margin-top: 3%;
     }
   }
   .headerButton:focus {
