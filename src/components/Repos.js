@@ -12,7 +12,7 @@ function RepoCards(props) {
     >
       {props => (
         <div className="repoText" style={props}>
-          <p> {}</p>
+          <p> test</p>
         </div>
       )}
     </Spring>

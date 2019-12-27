@@ -1,24 +1,34 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import RepoCards from "./Repos";
+import fetchGitHub from "./utils/ProjectsUtil";
 
 function Projects() {
   const [repos, setRepos] = useState([]);
   useEffect(() => {
-    document.addEventListener("scroll", () => {
-      let count = 0;
-      if (window.scrollY > 925 && count === 0) {
-        axios
-          .get("https://api.github.com/users/dannyotown/repos")
-          .then(response => setRepos(response.data))
-          .catch(error => console.log(error));
-        count += 1;
-      } else {
-        return document.removeEventListener("scroll", () => {
-          return true;
-        });
+    let countApiCalls = 0;
+    async function getData() {
+      try {
+        if (window.scrollY > 925 && countApiCalls === 0) {
+          countApiCalls += 1;
+          const getApiData = await fetchGitHub();
+          setRepos(getApiData.data);
+        }
+      } catch (error) {
+        console.log(error);
       }
-    });
+    }
+    if (countApiCalls === 0) {
+      document.addEventListener(
+        "scroll",
+        () => {
+          getData();
+        },
+        true
+      );
+    } else {
+      return document.removeEventListener("scroll", getData(), false);
+    }
   }, []);
   return (
     <>
