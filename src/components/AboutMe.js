@@ -1,5 +1,4 @@
 import React from "react";
-import portfoliogif from "../img/portfoliogif.gif";
 
 function AboutMe() {
   return (

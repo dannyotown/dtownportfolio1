@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
 import RepoCards from "./Repos";
 import fetchGitHub from "./utils/ProjectsUtil";
 
