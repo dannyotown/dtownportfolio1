@@ -1,18 +1,34 @@
 import React from "react";
 import { Spring } from "react-spring/renderprops";
-function RepoCards(props) {
+import js from "../img/js.png";
+import html5 from "../img/html5.png";
+function RepoCards({ repo, timer }) {
   function durationTimer(key) {
     return key * 75;
   }
+  console.log(repo);
   return (
     <Spring
       from={{ opacity: 0, marginTop: 50, marginRight: -500 }}
-      to={{ opacity: 1, marginTop: 0, marginRight: 0 }}
-      config={{ delay: durationTimer(props.timer), duration: 500 }}
+      to={{ opacity: 1, marginTop: 0, marginRight: 0, info: { repo } }}
+      config={{ delay: durationTimer(timer), duration: 500 }}
     >
       {props => (
         <div className="repoText" style={props}>
-          <p> test</p>
+          {props.info.repo.language === "JavaScript" ? (
+            <img className="repoImg" atl="Logo" src={js} />
+          ) : (
+            <img className="repoImg" atl="Logo" src={html5} />
+          )}
+          <div className="repoHeader">{props.info.repo.name.trim()} </div>
+          <button
+            className="RepoButton"
+            onClick={() =>
+              (window.location.href = `${props.info.repo.html_url}`)
+            }
+          >
+            View
+          </button>
         </div>
       )}
     </Spring>
