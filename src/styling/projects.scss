@@ -29,7 +29,7 @@
   }
   .ProjectFlexRepo {
     width: 90%;
-    height: 100%;
+    height: 2500px;
     padding-bottom: 2%;
     margin: 0 auto;
     display: grid;
@@ -43,6 +43,7 @@
     }
     @media screen and (max-width: "800px") {
       grid-template-columns: auto auto;
+      height: 100%;
     }
     @media screen and (max-width: "600px") {
       grid-template-columns: auto;
