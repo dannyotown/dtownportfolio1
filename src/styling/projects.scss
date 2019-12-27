@@ -65,10 +65,15 @@
       }
       .RepoButton {
         width: 60%;
+        height: 7%;
         margin: 0 auto;
         font-family: $mainFont;
         font-weight: bold;
+        font-size: 1.05rem;
         margin-bottom: 5%;
+        background: white;
+        border: 1px solid #fafafa;
+        box-shadow: 1px 1px black;
       }
     }
   }
