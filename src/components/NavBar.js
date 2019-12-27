@@ -39,7 +39,7 @@ function NavBar() {
           onMouseLeave={() =>
             document.getElementById("nav3").classList.toggle("colorChange")
           }
-          onClick={() => window.scrollTo(0, 1800)}
+          onClick={() => window.scrollTo(0, 1650)}
         >
           PORTFOLIO
         </div>
