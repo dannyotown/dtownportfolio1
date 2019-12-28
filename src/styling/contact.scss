@@ -38,16 +38,16 @@
   form {
     display: flex;
     flex-flow: column nowrap;
-    width: 30%;
+    width: 40%;
     margin: 0 auto;
     @media screen and (max-width: "1200px") {
-      width: 40%;
+      width: 55%;
     }
     @media screen and (max-width: "1000px") {
-      width: 50%;
+      width: 60%;
     }
     @media screen and (max-width: "800px") {
-      width: 60%;
+      width: 75%;
     }
     .regFormInput {
       height: 40px;
@@ -59,7 +59,7 @@
       padding: 2%;
     }
     .difFormInput {
-      height: 125px;
+      height: 150px;
       background-color: $darkBlack;
       border: none;
       font-size: 1.1rem;

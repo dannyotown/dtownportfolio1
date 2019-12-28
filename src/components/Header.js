@@ -8,7 +8,12 @@ function Header() {
           Hello, I'm <span className="nameSpan">Danny Town.</span>
         </p>
         <p className="headerFont">I'm a full-stack web developer.</p>
-        <button className="headerButton">Contact Me</button>
+        <button
+          className="headerButton"
+          onClick={() => window.scrollTo(0, 10000)}
+        >
+          Contact Me
+        </button>
       </div>
     </div>
   );
