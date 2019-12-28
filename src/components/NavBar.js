@@ -52,6 +52,7 @@ function NavBar() {
           onMouseLeave={() =>
             document.getElementById("nav4").classList.toggle("colorChange")
           }
+          onClick={() => window.scrollTo(0, 5000)}
         >
           CONTACT
         </div>
