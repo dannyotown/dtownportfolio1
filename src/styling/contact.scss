@@ -1,0 +1,84 @@
+.ContactDiv {
+  height: 600px;
+  background-color: $lightBlack;
+  width: 100%;
+  font-family: $mainFont;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  padding-bottom: 25px;
+  h1 {
+    text-align: center;
+    font-family: $mainFont;
+    font-size: 30pt;
+    color: #fafafa;
+    font-weight: bolder;
+    @media screen and (max-width: "600px") {
+      padding-top: 8%;
+      font-size: 30pt;
+    }
+  }
+  .ContactUnderline {
+    margin: 0 auto;
+    margin-top: 0.5%;
+    width: 100px;
+    height: 4px;
+    background-color: #fafafa;
+    @media screen and (max-width: "600px") {
+      margin-top: 1%;
+      margin-bottom: 4%;
+    }
+  }
+  .ContactMeBlurb {
+    margin: 3% 0% 3% 0%;
+    text-align: center;
+    color: $purpleColor;
+    font-size: 1.1rem;
+  }
+  form {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 30%;
+    margin: 0 auto;
+    @media screen and (max-width: "1200px") {
+      width: 40%;
+    }
+    @media screen and (max-width: "1000px") {
+      width: 50%;
+    }
+    @media screen and (max-width: "800px") {
+      width: 60%;
+    }
+    .regFormInput {
+      height: 40px;
+      background-color: $darkBlack;
+      border: none;
+      margin-bottom: 4px;
+      font-size: 1.1rem;
+      color: #fafafa;
+      padding: 2%;
+    }
+    .difFormInput {
+      height: 125px;
+      background-color: $darkBlack;
+      border: none;
+      font-size: 1.1rem;
+      margin-bottom: 4px;
+      color: #fafafa;
+      padding: 2%;
+    }
+    .formButton {
+      height: 40px;
+      width: 30%;
+      display: flex;
+      align-self: flex-end;
+      justify-content: center;
+      font-family: $mainFont;
+      background: none;
+      color: #fafafa;
+      margin-top: 1%;
+      font-size: 1.1rem;
+      border: 1px solid #fafafa;
+    }
+  }
+}
