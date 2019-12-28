@@ -34,7 +34,11 @@
     text-align: center;
     color: $purpleColor;
     font-size: 1.1rem;
+    @media screen and (max-width: "800px") {
+      margin-bottom: 7%;
+    }
   }
+
   form {
     display: flex;
     flex-flow: column nowrap;
