@@ -5,7 +5,7 @@ function Header() {
     <div className="headerText">
       <div className="headerBox">
         <p className="headerFont">
-          Hello, I'm <span className="nameSpan">Danny Town.</span>
+          Hello, I'm <span className="nameSpan">Danny Town</span>.
         </p>
         <p className="headerFont">I'm a full-stack web developer.</p>
         <button
