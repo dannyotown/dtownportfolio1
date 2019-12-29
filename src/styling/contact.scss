@@ -88,5 +88,8 @@
       cursor: pointer;
       outline: none;
     }
+    .formButton:hover {
+      border: 1px solid $purpleColor;
+    }
   }
 }
