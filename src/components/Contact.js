@@ -54,7 +54,7 @@ function ContactMe() {
   };
   return (
     <>
-      <div className="ContactDiv">
+      <div className="ContactDiv" id="ScrollToContact">
         <h1>Contact Me</h1>
         <div className="ContactUnderline"></div>
         <div className="ContactMeBlurb">

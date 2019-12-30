@@ -2,7 +2,7 @@ import React from "react";
 
 function Header() {
   return (
-    <div className="headerText">
+    <div className="headerText" class="ScrollToHeader">
       <div className="headerBox">
         <p className="headerFont">
           Hello, I'm <span className="nameSpan">Danny Town</span>.

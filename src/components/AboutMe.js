@@ -3,7 +3,7 @@ import React from "react";
 function AboutMe() {
   return (
     <>
-      <div className="AboutMe">
+      <div className="AboutMe" id="ScrollToAboutMe">
         <h1>About</h1>
         <div className="AboutUnderline"></div>
         <div className="AboutMeFlex">
