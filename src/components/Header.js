@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 
 function Header() {
   return (
@@ -8,12 +9,21 @@ function Header() {
           Hello, I'm <span className="nameSpan">Danny Town</span>.
         </p>
         <p className="headerFont">I'm a full-stack web developer.</p>
-        <button
-          className="headerButton"
-          onClick={() => window.scrollTo(0, 10000)}
+        <Link
+          activeClass="active"
+          to="ScrollToContact"
+          spy={true}
+          smooth={true}
+          hashSpy={true}
+          offset={0}
+          duration={500}
+          delay={200}
+          isDynamic={true}
+          ignoreCancelEvents={false}
+          style={{ margin: "0 auto", marginTop: ".5%" }}
         >
-          Contact Me
-        </button>
+          <button className="headerButton">Contact Me</button>
+        </Link>
       </div>
     </div>
   );
