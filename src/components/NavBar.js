@@ -16,10 +16,10 @@ function NavBar() {
           delay={200}
           isDynamic={true}
           ignoreCancelEvents={false}
+          className="navButtons"
+          id="nav1"
         >
           <div
-            className="navButtons"
-            id="nav1"
             onMouseEnter={() =>
               document.getElementById("nav1").classList.toggle("colorChange")
             }
@@ -41,10 +41,10 @@ function NavBar() {
           delay={200}
           isDynamic={true}
           ignoreCancelEvents={false}
+          className="navButtons"
+          id="nav2"
         >
           <div
-            className="navButtons"
-            id="nav2"
             onMouseEnter={() =>
               document.getElementById("nav2").classList.toggle("colorChange")
             }
@@ -66,10 +66,10 @@ function NavBar() {
           delay={200}
           isDynamic={true}
           ignoreCancelEvents={false}
+          className="navButtons"
+          id="nav3"
         >
           <div
-            className="navButtons"
-            id="nav3"
             onMouseEnter={() =>
               document.getElementById("nav3").classList.toggle("colorChange")
             }
@@ -91,10 +91,10 @@ function NavBar() {
           delay={200}
           isDynamic={true}
           ignoreCancelEvents={false}
+          className="navButtons"
+          id="nav4"
         >
           <div
-            className="navButtons"
-            id="nav4"
             onMouseEnter={() =>
               document.getElementById("nav4").classList.toggle("colorChange")
             }
