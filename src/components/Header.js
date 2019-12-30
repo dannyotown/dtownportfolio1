@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 
 function Header() {
   return (
-    <div className="headerText" class="ScrollToHeader">
+    <div className="headerText" id="ScrollToHeader">
       <div className="headerBox">
         <p className="headerFont">
           Hello, I'm <span className="nameSpan">Danny Town</span>.
@@ -20,7 +20,7 @@ function Header() {
           delay={200}
           isDynamic={true}
           ignoreCancelEvents={false}
-          style={{ margin: "0 auto", marginTop: ".5%" }}
+          style={{ margin: "0 auto", marginTop: ".5%", fontFamily: "Raleway" }}
         >
           <button className="headerButton">Contact Me</button>
         </Link>
