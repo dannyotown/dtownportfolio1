@@ -1,6 +1,9 @@
 .AboutMe {
   height: 700px;
   width: 100%;
+  @media screen and (max-width: "1000px") {
+    height: 100%;
+  }
   h1 {
     text-align: center;
     padding-top: 3%;
@@ -8,7 +11,7 @@
     font-size: 30pt;
     color: $grey;
     font-weight: bolder;
-    @media screen and (max-width: "600px") {
+    @media screen and (max-width: "1000px") {
       padding-top: 8%;
       font-size: 30pt;
     }
@@ -20,31 +23,55 @@
     width: 100px;
     height: 4px;
     background-color: $grey;
-    @media screen and (max-width: "600px") {
+    @media screen and (max-width: "1000px") {
       margin-top: 1%;
       margin-bottom: 6%;
     }
   }
   .AboutMeFlex {
+    width: 100%;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
     align-items: center;
-    margin-top: 4%;
     @media screen and (max-width: "1000px") {
       flex-flow: column nowrap;
     }
-    .AboutMeText {
-      width: 60%;
-      font-size: 2rem;
-      font-family: $mainFont;
-      text-align: center;
+    .AboutMeTextBox {
+      height: 100%;
+      width: 50%;
+      display: flex;
       @media screen and (max-width: "1000px") {
         width: 100%;
+        margin-bottom: 5%;
+      }
+      .AboutMeText {
+        width: 80%;
+        text-align: center;
+        font-family: $mainFont;
+        font-size: 1.5rem;
+        margin: auto;
+        line-height: 1.2;
+        h2 {
+          font-weight: bold;
+          margin-bottom: 2.5%;
+        }
       }
     }
-    .AboutMeImage {
-      width: auto;
+    .AboutMeImages {
+      height: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      @media screen and (max-width: "1000px") {
+        margin-bottom: 5%;
+      }
+      .imageAboutMe {
+        width: auto;
+        height: 115px;
+        margin: 0% 5% 0% 5%;
+      }
     }
   }
 }
