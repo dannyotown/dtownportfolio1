@@ -14,28 +14,20 @@
     color: #fafafa;
     font-weight: bolder;
     @media screen and (max-width: "600px") {
-      padding-top: 8%;
+      padding-top: 4%;
       font-size: 30pt;
     }
   }
   .ContactUnderline {
     margin: 0 auto;
     margin-top: 0.5%;
-    width: 100px;
+    margin-bottom: 3%;
+    width: 125px;
     height: 4px;
     background-color: #fafafa;
     @media screen and (max-width: "600px") {
-      margin-top: 1%;
-      margin-bottom: 4%;
-    }
-  }
-  .ContactMeBlurb {
-    margin: 3% 0% 3% 0%;
-    text-align: center;
-    color: $lightBlue;
-    font-size: 1.1rem;
-    @media screen and (max-width: "800px") {
-      margin-bottom: 7%;
+      margin-top: 4%;
+      margin-bottom: 8%;
     }
   }
 

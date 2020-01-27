@@ -55,9 +55,8 @@ function ContactMe() {
   return (
     <>
       <div className="ContactDiv" id="ScrollToContact">
-        <h1>Contact</h1>
+        <h1>Contact Me</h1>
         <div className="ContactUnderline"></div>
-        <div className="ContactMeBlurb">Want to work together?</div>
         <form onSubmit={onSubmit}>
           <input
             type="email"
