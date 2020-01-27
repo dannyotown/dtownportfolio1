@@ -1,28 +1,29 @@
 import React from "react";
 import { Link } from "react-scroll";
+import DownArrow from "../img/DownArrow.png";
 
 function Header() {
   return (
     <div className="headerText" id="ScrollToHeader">
       <div className="headerBox">
         <p className="headerFont">
-          Hello, I'm <span className="nameSpan">Danny Town</span>.
+          <span className="nameSpan">Danny</span>
         </p>
-        <p className="headerFont">I'm a full-stack web developer.</p>
+        <p className="headerFont">Town</p>
         <Link
           activeClass="active"
-          to="ScrollToContact"
+          to="ScrollToAboutMe"
           spy={true}
           smooth={true}
           hashSpy={true}
-          offset={0}
+          offset={-20}
           duration={500}
           delay={200}
           isDynamic={true}
           ignoreCancelEvents={false}
           style={{ margin: "0 auto", marginTop: ".5%", fontFamily: "Raleway" }}
         >
-          <button className="headerButton">Contact Me</button>
+          <img src={DownArrow} className="headerArrow"></img>
         </Link>
       </div>
     </div>

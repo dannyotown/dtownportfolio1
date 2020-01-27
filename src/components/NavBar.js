@@ -16,7 +16,7 @@ function NavBar() {
           delay={200}
           isDynamic={true}
           ignoreCancelEvents={false}
-          className="navButtons"
+          className="navButtons addPad"
           id="nav1"
         >
           <div
@@ -41,7 +41,7 @@ function NavBar() {
           delay={200}
           isDynamic={true}
           ignoreCancelEvents={false}
-          className="navButtons"
+          className="navButtons addPad"
           id="nav2"
         >
           <div
@@ -66,7 +66,7 @@ function NavBar() {
           delay={200}
           isDynamic={true}
           ignoreCancelEvents={false}
-          className="navButtons"
+          className="navButtons addPad"
           id="nav3"
         >
           <div
@@ -91,7 +91,7 @@ function NavBar() {
           delay={200}
           isDynamic={true}
           ignoreCancelEvents={false}
-          className="navButtons"
+          className="navButtons addPad"
           id="nav4"
         >
           <div
@@ -105,8 +105,12 @@ function NavBar() {
             CONTACT
           </div>
         </Link>
+        <div className="hamBurgerFlex">
+          <div className="hamBurgerMenu"></div>
+          <div className="hamBurgerMenu"></div>
+          <div className="hamBurgerMenu"></div>
+        </div>
       </nav>
-      <div className="navLine"></div>
     </>
   );
 }

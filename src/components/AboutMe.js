@@ -25,7 +25,7 @@ function AboutMe() {
               <h2 id="WhoAmI">Who Am I?</h2>
               Hi, My Name is Danny Town. I am a full-stack developer who enjoys
               creating dynamic & responsive websites. I graduated from Indiana
-              University with a degree in Informatics and am currently attending
+              University with a degree in Informatics. I am currently attending
               Lambda school for full-stack development. If you have any
               questions please feel free to contact me.
             </div>
