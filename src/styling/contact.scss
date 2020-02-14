@@ -6,14 +6,14 @@
   display: flex;
   flex-flow: column;
   justify-content: center;
-  padding-bottom: 25px;
+  padding: $sectionPadding;
   h1 {
     text-align: center;
     font-family: $mainFont;
     font-size: 30pt;
     color: #fafafa;
     font-weight: bolder;
-    @media screen and (max-width: "600px") {
+    @include for-small-phone-only {
       padding-top: 4%;
       font-size: 30pt;
     }
@@ -25,7 +25,7 @@
     width: 125px;
     height: 4px;
     background-color: #fafafa;
-    @media screen and (max-width: "600px") {
+    @include for-small-phone-only {
       margin-top: 4%;
       margin-bottom: 8%;
     }
@@ -36,13 +36,13 @@
     flex-flow: column nowrap;
     width: 40%;
     margin: 0 auto;
-    @media screen and (max-width: "1200px") {
+    @include for-laptop-and-smaller {
       width: 55%;
     }
-    @media screen and (max-width: "1000px") {
+    @include for-tablet-and-smaller {
       width: 60%;
     }
-    @media screen and (max-width: "800px") {
+    @include for-large-phone-and-smaller {
       width: 75%;
     }
     .regFormInput {

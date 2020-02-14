@@ -15,9 +15,9 @@ function RepoCards({ repo, timer }) {
       {props => (
         <div className="repoText" style={props}>
           {props.info.repo.language === "JavaScript" ? (
-            <img className="repoImg" atl="Logo" src={js} />
+            <img className="repoImg" alt="Logo" src={js} />
           ) : (
-            <img className="repoImg" atl="Logo" src={html5} />
+            <img className="repoImg" alt="Logo" src={html5} />
           )}
           <div className="repoHeader">{props.info.repo.name.trim()} </div>
           <button

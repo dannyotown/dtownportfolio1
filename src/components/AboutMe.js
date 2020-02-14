@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import aws from "../img/aws.png";
 import html5 from "../img/html5.png";
 import node from "../img/node.png";
@@ -8,12 +8,12 @@ import sass from "../img/sass.png";
 import csharp from "../img/csharp.png";
 
 function AboutMe() {
-  const [getImgs, setImgs] = useState([]);
-  useEffect(() => {
-    setTimeout(() => {
-      setImgs([react, html5, node, redux, aws, sass, csharp]);
-    }, 500);
-  }, []);
+  // const [getImgs, setImgs] = useState([]);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setImgs([react, html5, node, redux, aws, sass, csharp]);
+  //   }, 500);
+  // }, []);
   return (
     <>
       <div className="AboutMe" id="ScrollToAboutMe">

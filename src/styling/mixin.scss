@@ -1,2 +1,27 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
-$mainFont: "Raleway";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+$mainFont: "Open Sans";
+$sectionPadding: 7.5%;
+
+@mixin for-small-phone-only {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+
+@mixin for-large-phone-and-smaller {
+  @media (max-width: 800px) {
+    @content;
+  }
+}
+
+@mixin for-tablet-and-smaller {
+  @media (max-width: 1000px) {
+    @content;
+  }
+}
+
+@mixin for-laptop-and-smaller {
+  @media (max-width: 1400px) {
+    @content;
+  }
+}

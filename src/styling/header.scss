@@ -8,7 +8,7 @@
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
-  @media screen and (max-width: "800px") {
+  @include for-large-phone-and-smaller {
     top: 3%;
   }
   .headerFont {
@@ -31,7 +31,7 @@
     cursor: pointer;
     margin-top: 5%;
 
-    @media screen and (max-width: "800px") {
+    @include for-large-phone-and-smaller {
       margin-top: 10%;
     }
   }

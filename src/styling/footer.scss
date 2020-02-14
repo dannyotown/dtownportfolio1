@@ -10,9 +10,10 @@
     justify-content: center;
     align-items: center;
 
-    @media screen and (max-width: "800px") {
+    @include for-large-phone-and-smaller {
       padding-top: 2%;
     }
+
     .FooterBox {
       width: 65px;
       height: 60px;

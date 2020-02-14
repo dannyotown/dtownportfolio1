@@ -9,10 +9,13 @@
   border: none;
   border-radius: 25px;
   cursor: pointer;
-  @media screen and (max-width: "1000px") {
+  .ScrollUpButton:focus {
+    outline: none !important;
+  }
+  @include for-tablet-and-smaller {
     left: 90%;
   }
-  @media screen and (max-width: "800px") {
+  @include for-large-phone-and-smaller {
     left: 88%;
   }
   img {

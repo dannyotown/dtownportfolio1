@@ -23,7 +23,7 @@ function Header() {
           ignoreCancelEvents={false}
           style={{ margin: "0 auto", marginTop: ".5%", fontFamily: "Raleway" }}
         >
-          <img src={DownArrow} className="headerArrow"></img>
+          <img src={DownArrow} alt="Down Arrow" className="headerArrow"></img>
         </Link>
       </div>
     </div>
