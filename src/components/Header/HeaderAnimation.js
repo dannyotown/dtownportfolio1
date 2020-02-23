@@ -1,35 +1,37 @@
 import React from "react";
-import waveTop from "./imgs/waveTop.png";
-import waveMid from "./imgs/waveMid.png";
-import waveBot from "./imgs/waveBot.png";
-
+import Particles from "react-particles-js";
 function HeaderAnimation() {
+  const particlez = {
+    particles: {
+      number: {
+        value: 80,
+        density: {
+          enable: true,
+          value_area: 800
+        }
+      },
+      color: {
+        value: "random"
+      },
+      shape: {
+        type: "edge",
+        stroke: {
+          width: 1.5,
+          color: "#0094c6"
+        }
+      },
+      line_linked: {
+        enable: true,
+        distance: 300,
+        color: "#e31b6d",
+        opacity: 0.4,
+        width: 2
+      }
+    }
+  };
   return (
-    <div className="waveWrapper waveAnimation">
-      <div className="waveWrapperInner bgTop">
-        <div
-          className="wave waveTop"
-          style={{
-            backgroundImage: `url(${waveTop})`
-          }}
-        ></div>
-      </div>
-      <div className="waveWrapperInner bgMiddle">
-        <div
-          className="wave waveMiddle"
-          style={{
-            backgroundImage: `url(${waveMid})`
-          }}
-        ></div>
-      </div>
-      <div className="waveWrapperInner bgBottom">
-        <div
-          className="wave waveBottom"
-          style={{
-            backgroundImage: `url(${waveBot})`
-          }}
-        ></div>
-      </div>
+    <div style={{ backgroundColor: "#191919", height: "100vh" }}>
+      <Particles params={particlez} />
     </div>
   );
 }

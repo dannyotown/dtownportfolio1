@@ -12,6 +12,7 @@
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
+    @include displayFlex(flex, row nowrap, none, center);
     @include for-tablet-and-smaller {
       flex-flow: column nowrap;
     }

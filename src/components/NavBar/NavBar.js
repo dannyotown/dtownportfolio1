@@ -51,7 +51,7 @@ function NavBar() {
           spy={false}
           smooth={true}
           hashSpy={true}
-          offset={-200}
+          offset={-100}
           duration={500}
           delay={200}
           isDynamic={true}
