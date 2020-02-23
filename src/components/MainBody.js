@@ -1,9 +1,9 @@
 import React from "react";
-import NavBar from "./NavBar";
-import AboutMe from "./AboutMe";
-import Projects from "./Projects";
-import ContactMe from "./Contact";
-import Footer from "./Footer";
+import NavBar from "./NavBar/NavBar";
+import AboutMe from "./AboutMe/AboutMe";
+import Projects from "./Projects/Projects";
+import ContactMe from "./Contact/Contact";
+import Footer from "./Footer/Footer";
 
 function MainBody() {
   return (

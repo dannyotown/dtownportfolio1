@@ -1,31 +1,10 @@
 .Projects {
-  height: 100%;
-  padding: $sectionPadding;
-  width: 100%;
-  background-color: $lightGrey;
+  @include sectionBase($lightGrey);
   h1 {
-    text-align: center;
-    padding-top: 3%;
-    font-family: $mainFont;
-    font-size: 30pt;
-    color: $grey;
-    font-weight: bolder;
-    @include for-small-phone-only {
-      padding-top: 8%;
-      font-size: 30pt;
-    }
+    @include sectionHeader($grey);
   }
   .ProjectsUnderline {
-    margin: 0 auto;
-    margin-top: 0.5%;
-    margin-bottom: 3%;
-    width: 100px;
-    height: 4px;
-    background-color: $grey;
-    @include for-small-phone-only {
-      margin-top: 1%;
-      margin-bottom: 6%;
-    }
+    @include sectionUnderline($grey);
   }
   .ProjectFlexRepo {
     width: 90%;
@@ -50,9 +29,7 @@
     }
     .repoText {
       border: 1px solid white;
-      display: flex;
-      flex-flow: column nowrap;
-      justify-content: center;
+      @include displayFlex(flex, column nowrap, center, none);
       .repoImg {
         margin: 0 auto;
         margin-top: 2%;

@@ -1,7 +1,7 @@
 import React from "react";
-import waveTop from "../img/waveTop.png";
-import waveMid from "../img/waveMid.png";
-import waveBot from "../img/waveBot.png";
+import waveTop from "./imgs/waveTop.png";
+import waveMid from "./imgs/waveMid.png";
+import waveBot from "./imgs/waveBot.png";
 
 function HeaderAnimation() {
   return (

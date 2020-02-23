@@ -1,30 +1,11 @@
 .AboutMe {
-  height: 100%;
-  width: 100%;
-  padding: $sectionPadding;
+  @include sectionBase($whiteColor);
   margin-bottom: 5%;
   h1 {
-    text-align: center;
-    font-family: $mainFont;
-    font-size: 30pt;
-    color: $grey;
-    font-weight: bolder;
-    @include for-tablet-and-smaller {
-      padding-top: 8%;
-      font-size: 30pt;
-    }
+    @include sectionHeader($grey);
   }
   .AboutUnderline {
-    margin: 0 auto;
-    margin-top: 0.5%;
-    margin-bottom: 3%;
-    width: 100px;
-    height: 4px;
-    background-color: $grey;
-    @include for-tablet-and-smaller {
-      margin-top: 1%;
-      margin-bottom: 6%;
-    }
+    @include sectionUnderline($grey);
   }
   .AboutMeFlex {
     width: 100%;

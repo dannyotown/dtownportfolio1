@@ -1,7 +1,7 @@
 import React from "react";
 import { Spring } from "react-spring/renderprops";
-import js from "../img/js.png";
-import html5 from "../img/html5.png";
+import js from "./imgs/js.png";
+import html5 from "./imgs/html5.png";
 function RepoCards({ repo, timer }) {
   function durationTimer(key) {
     return key * 75;

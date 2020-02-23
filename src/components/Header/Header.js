@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
-import DownArrow from "../img/DownArrow.png";
+import DownArrow from "./imgs/DownArrow.png";
 
 function Header() {
   return (

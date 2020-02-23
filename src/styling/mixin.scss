@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 $mainFont: "Open Sans";
-$sectionPadding: 7.5%;
+$sectionPadding: 5%;
 
 @mixin for-small-phone-only {
   @media (max-width: 599px) {
@@ -24,4 +24,44 @@ $sectionPadding: 7.5%;
   @media (max-width: 1400px) {
     @content;
   }
+}
+
+@mixin sectionHeader($fontColor) {
+  font-size: 45px;
+  text-align: center;
+  font-family: $mainFont;
+  color: $fontColor;
+  font-weight: bolder;
+  padding-bottom: 1.25%;
+  @include for-small-phone-only {
+    font-size: 35px;
+  }
+}
+
+@mixin sectionUnderline($bgColor) {
+  margin: 0 auto;
+  width: 110px;
+  height: 5px;
+  background-color: $bgColor;
+  color: $bgColor;
+  font-size: 5px;
+  margin-bottom: $sectionPadding;
+  @include for-small-phone-only {
+    margin-top: 1%;
+    margin-bottom: 6%;
+  }
+}
+
+@mixin sectionBase($bgColor) {
+  height: 100%;
+  width: 100%;
+  padding: $sectionPadding;
+  background-color: $bgColor;
+}
+
+@mixin displayFlex($display, $flexFlow, $justifyContent, $alignItems) {
+  display: $display;
+  flex-flow: $flexFlow;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
 }

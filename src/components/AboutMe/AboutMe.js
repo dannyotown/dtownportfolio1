@@ -1,19 +1,13 @@
 import React from "react";
-import aws from "../img/aws.png";
-import html5 from "../img/html5.png";
-import node from "../img/node.png";
-import react from "../img/react.png";
-import redux from "../img/redux.png";
-import sass from "../img/sass.png";
-import csharp from "../img/csharp.png";
+import aws from "./imgs/aws.png";
+import html5 from "./imgs/html5.png";
+import node from "./imgs/node.png";
+import react from "./imgs/react.png";
+import redux from "./imgs/redux.png";
+import sass from "./imgs/sass.png";
+import csharp from "./imgs/csharp.png";
 
 function AboutMe() {
-  // const [getImgs, setImgs] = useState([]);
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     setImgs([react, html5, node, redux, aws, sass, csharp]);
-  //   }, 500);
-  // }, []);
   return (
     <>
       <div className="AboutMe" id="ScrollToAboutMe">

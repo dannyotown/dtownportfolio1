@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import RepoCards from "./Repos";
-import fetchGitHub from "./utils/ProjectsUtil";
+import fetchGitHub from "../utils/apiInstance";
 
 function Projects() {
   const [repos, setRepos] = useState([]);

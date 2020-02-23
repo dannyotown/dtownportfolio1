@@ -1,39 +1,15 @@
 .ContactDiv {
-  height: 600px;
-  background-color: $lightBlack;
-  width: 100%;
-  font-family: $mainFont;
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  padding: $sectionPadding;
+  @include displayFlex(flex, column, center, none);
+  @include sectionBase($lightBlack);
   h1 {
-    text-align: center;
-    font-family: $mainFont;
-    font-size: 30pt;
-    color: #fafafa;
-    font-weight: bolder;
-    @include for-small-phone-only {
-      padding-top: 4%;
-      font-size: 30pt;
-    }
+    @include sectionHeader($whiteColor);
   }
   .ContactUnderline {
-    margin: 0 auto;
-    margin-top: 0.5%;
-    margin-bottom: 3%;
-    width: 125px;
-    height: 4px;
-    background-color: #fafafa;
-    @include for-small-phone-only {
-      margin-top: 4%;
-      margin-bottom: 8%;
-    }
+    @include sectionUnderline($whiteColor);
   }
 
   form {
-    display: flex;
-    flex-flow: column nowrap;
+    @include displayFlex(flex, column nowrap, none, none);
     width: 40%;
     margin: 0 auto;
     @include for-laptop-and-smaller {
