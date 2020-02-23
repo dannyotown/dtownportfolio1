@@ -31,6 +31,9 @@
       text-align: center;
       cursor: pointer;
     }
+    .navButtons:hover {
+      color: $lightBlue;
+    }
     @include for-small-phone-only {
       #nav1 {
         display: none;

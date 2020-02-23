@@ -27,16 +27,7 @@ function NavBar() {
           className="navButtons addPad"
           id="nav1"
         >
-          <div
-            onMouseEnter={() =>
-              document.getElementById("nav1").classList.toggle("colorChange")
-            }
-            onMouseLeave={() =>
-              document.getElementById("nav1").classList.toggle("colorChange")
-            }
-          >
-            HOME
-          </div>
+          <div>HOME</div>
         </Link>
         <Link
           activeClass="active"
@@ -52,16 +43,7 @@ function NavBar() {
           className="navButtons addPad"
           id="nav2"
         >
-          <div
-            onMouseEnter={() =>
-              document.getElementById("nav2").classList.toggle("colorChange")
-            }
-            onMouseLeave={() =>
-              document.getElementById("nav2").classList.toggle("colorChange")
-            }
-          >
-            ABOUT
-          </div>
+          <div>ABOUT</div>
         </Link>
         <Link
           activeClass="active"
@@ -77,16 +59,7 @@ function NavBar() {
           className="navButtons addPad"
           id="nav3"
         >
-          <div
-            onMouseEnter={() =>
-              document.getElementById("nav3").classList.toggle("colorChange")
-            }
-            onMouseLeave={() =>
-              document.getElementById("nav3").classList.toggle("colorChange")
-            }
-          >
-            PORTFOLIO
-          </div>
+          <div>PORTFOLIO</div>
         </Link>
         <Link
           activeClass="active"
@@ -102,31 +75,9 @@ function NavBar() {
           className="navButtons addPad"
           id="nav4"
         >
-          <div
-            onMouseEnter={() =>
-              document.getElementById("nav4").classList.toggle("colorChange")
-            }
-            onMouseLeave={() =>
-              document.getElementById("nav4").classList.toggle("colorChange")
-            }
-          >
-            CONTACT
-          </div>
+          <div>CONTACT</div>
         </Link>
-        <div
-          className="navButtons addPad iphoneScreen"
-          id="iphoneScreen"
-          onMouseEnter={() =>
-            document
-              .getElementById("iphoneScreen")
-              .classList.toggle("colorChange")
-          }
-          onMouseLeave={() =>
-            document
-              .getElementById("iphoneScreen")
-              .classList.toggle("colorChange")
-          }
-        >
+        <div className="navButtons addPad iphoneScreen" id="iphoneScreen">
           <div className="hamburgerFlex" id="hamburgerMenu">
             <div className="hamburgerIcon"></div>
             <div className="hamburgerIcon"></div>

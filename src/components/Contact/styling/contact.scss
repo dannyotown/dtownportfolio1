@@ -44,9 +44,8 @@
     .formButton {
       height: 40px;
       width: 30%;
-      display: flex;
+      @include displayFlex(flex, none, center, none);
       align-self: flex-end;
-      justify-content: center;
       font-family: $mainFont;
       background: none;
       color: #fafafa;
