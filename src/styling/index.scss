@@ -1,9 +1,9 @@
 @import "reset";
 @import "colors";
 @import "mixin";
+@import "../components/Header/styling/animation.scss";
 @import "../components/Header/styling/header.scss";
 @import "../components/NavBar/styling/nav.scss";
-@import "../components/Header/styling/animation.scss";
 @import "../components/AboutMe/styling/aboutme.scss";
 @import "../components/Footer/styling/footer.scss";
 @import "../components/Projects/styling/projects.scss";

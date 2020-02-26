@@ -30,7 +30,7 @@ function HeaderAnimation() {
     }
   };
   return (
-    <div style={{ backgroundColor: "#191919", height: "100vh" }}>
+    <div id="headerBackground">
       <Particles params={particlez} />
     </div>
   );
