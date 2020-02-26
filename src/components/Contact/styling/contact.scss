@@ -51,12 +51,14 @@
       color: #fafafa;
       margin-top: 1%;
       font-size: 1.1rem;
-      border: 1px solid #fafafa;
+      border: 1.45px solid #fafafa;
       cursor: pointer;
       outline: none;
     }
     .formButton:hover {
-      border: 1px solid $lightBlue;
+      border: 1.5px solid $lightBlue;
+      color: $lightBlue;
+      font-weight: bold;
     }
   }
 }
