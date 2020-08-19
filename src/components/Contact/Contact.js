@@ -5,25 +5,28 @@ import withReactContent from "sweetalert2-react-content";
 
 function ContactMe() {
   const MySwal = withReactContent(Swal);
+  const [getSpinner, setSpinner] = useState(false);
   const [getForm, setForm] = useState({
     email: "",
     subject: "",
-    body: ""
+    body: "",
   });
-  const onChangeHandler = e => {
+  const onChangeHandler = (e) => {
     e.preventDefault();
     setForm({
       ...getForm,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
-  const onSubmit = e => {
+  const onSubmit = (e) => {
+    setSpinner(true);
     e.preventDefault();
     if (getForm.email === "" || getForm.subject === "" || getForm.body === "") {
+      setSpinner(false);
       MySwal.fire({
         icon: "error",
         iconHtml: '<i class="fas fa-bug">X</i>',
-        title: "Make sure all fields are filled in!"
+        title: "Make sure all fields are filled in!",
       });
     } else {
       axios
@@ -32,22 +35,24 @@ function ContactMe() {
           getForm
         )
         .then(() => {
+          setSpinner(false);
           MySwal.fire({
             icon: "success",
             iconHtml: '<i class="fa fa-check">✓</i>',
-            title: "Message Received!"
+            title: "Message Received!",
           });
           setForm({
             email: "",
             subject: "",
-            body: ""
+            body: "",
           });
         })
         .catch(() => {
+          setSpinner(false);
           MySwal.fire({
             icon: "error",
             iconHtml: '<i class="fas fa-bug">X</i>',
-            title: "Server Error, Please Try Again Later!"
+            title: "Server Error, Please Try Again Later!",
           });
         });
     }
@@ -56,37 +61,41 @@ function ContactMe() {
     <>
       <div className="ContactDiv" id="ScrollToContact">
         <h1>Contact Me</h1>
-        <div className="ContactUnderline"> s</div>
-        <form onSubmit={onSubmit}>
-          <input
-            type="email"
-            name="email"
-            className="regFormInput"
-            placeholder="Your Email"
-            value={getForm.email}
-            onChange={onChangeHandler}
-          />
-          <input
-            type="text"
-            name="subject"
-            className="regFormInput"
-            placeholder="Subject"
-            value={getForm.subject}
-            onChange={onChangeHandler}
-          />
-          <textarea
-            type="text"
-            name="body"
-            className="difFormInput"
-            placeholder="Your Message"
-            value={getForm.body}
-            onChange={onChangeHandler}
-          />
-          <button className="formButton" type="submit">
-            {" "}
-            Send{" "}
-          </button>
-        </form>
+        <div className="ContactUnderline"></div>
+        {!getSpinner ? (
+          <form onSubmit={onSubmit}>
+            <input
+              type="email"
+              name="email"
+              className="regFormInput"
+              placeholder="Your Email"
+              value={getForm.email}
+              onChange={onChangeHandler}
+            />
+            <input
+              type="text"
+              name="subject"
+              className="regFormInput"
+              placeholder="Subject"
+              value={getForm.subject}
+              onChange={onChangeHandler}
+            />
+            <textarea
+              type="text"
+              name="body"
+              className="difFormInput"
+              placeholder="Your Message"
+              value={getForm.body}
+              onChange={onChangeHandler}
+            />
+            <button className="formButton" type="submit">
+              {" "}
+              Send{" "}
+            </button>
+          </form>
+        ) : (
+          <div className="loader">loading</div>
+        )}
       </div>
     </>
   );
