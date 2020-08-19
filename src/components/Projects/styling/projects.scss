@@ -7,52 +7,61 @@
     @include sectionUnderline($grey);
   }
   .ProjectFlexRepo {
-    width: 90%;
-    height: 2500px;
-    padding-bottom: 2%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    align-items: stretch;
-    @media screen and (max-width: "1440px") {
-      grid-template-columns: auto auto auto auto;
-    }
-    @include for-tablet-and-smaller {
-      height: 100%;
-      grid-template-columns: auto auto auto;
-    }
-    @include for-large-phone-and-smaller {
-      grid-template-columns: auto auto;
-    }
-    @include for-small-phone-only {
-      grid-template-columns: auto;
-    }
-    .repoText {
-      border: 1px solid white;
-      @include displayFlex(flex, column nowrap, center, none);
-      .repoImg {
-        margin: 0 auto;
-        margin-top: 2%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    .ProjectBox {
+      display: flex;
+      flex-flow: row;
+      .ProjectLeftBox {
+        width: 50%;
+        @include displayFlex(flex, column, none, center);
+        .ProjectCardHeader {
+          margin: 2% 0% 2% 0%;
+          text-decoration: underline;
+          font-weight: bolder;
+        }
+        .ProjectGif {
+          height: 18rem;
+          width: auto;
+        }
       }
-      .repoHeader {
-        padding-top: 5%;
-        padding-bottom: 5%;
-        text-align: center;
-        font-family: $mainFont;
-        font-weight: bold;
+      .ProjectRightBox {
+        width: 50%;
+        @include displayFlex(flex, column, none, center);
+        .ProjectCardHeader {
+          margin: 2% 0% 2% 0%;
+        }
+        .TechStack {
+          width: 75%;
+          @include displayFlex(flex, row nowrap, space-around, none);
+          h5 {
+            font-size: 3rem;
+            text-decoration: underline;
+            color: $grey;
+          }
+          li {
+            font-size: 2rem;
+            color: $grey;
+            text-align: center;
+            margin: 4.5% 0% 0% 0%;
+          }
+        }
       }
-      .RepoButton {
-        width: 60%;
-        height: 30px;
-        margin: 0 auto;
-        font-family: $mainFont;
-        font-weight: bold;
-        font-size: 1.05rem;
-        margin-bottom: 3.5%;
-        background: white;
-        border: 1px solid #fafafa;
-        box-shadow: 1px 1px black;
-        cursor: pointer;
+    }
+    .ViewCode {
+      width: 100%;
+      margin-bottom: 7%;
+      .CodeLinks {
+        @include displayFlex(flex, none, center, none);
+        a {
+          background-color: $lightestBlack;
+          padding: 1%;
+          font-weight: bold;
+          color: white;
+          margin: 4% 0.5% 0 0.5%;
+          text-decoration: none;
+        }
       }
     }
   }

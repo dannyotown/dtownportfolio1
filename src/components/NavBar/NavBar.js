@@ -9,6 +9,13 @@ function NavBar() {
         items.classList.toggle("displayNav");
       }
     });
+    return () =>
+      document.removeEventListener("click", () => {
+        const navItems = document.getElementsByClassName("navButtons");
+        for (let items of navItems) {
+          items.classList.toggle("displayNav");
+        }
+      });
   }, []);
   return (
     <>
@@ -17,12 +24,12 @@ function NavBar() {
           activeClass="active"
           to="ScrollToHeader"
           spy={false}
-          smooth={true}
-          hashSpy={true}
+          smooth={false}
+          hashSpy={false}
           offset={-50}
           duration={500}
           delay={200}
-          isDynamic={true}
+          isDynamic={false}
           ignoreCancelEvents={false}
           className="navButtons addPad"
           id="nav1"
@@ -33,12 +40,12 @@ function NavBar() {
           activeClass="active"
           to="ScrollToAboutMe"
           spy={false}
-          smooth={true}
-          hashSpy={true}
+          smooth={false}
+          hashSpy={false}
           offset={-200}
           duration={500}
           delay={200}
-          isDynamic={true}
+          isDynamic={false}
           ignoreCancelEvents={false}
           className="navButtons addPad"
           id="nav2"
@@ -49,12 +56,12 @@ function NavBar() {
           activeClass="active"
           to="ScrollToProjects"
           spy={false}
-          smooth={true}
-          hashSpy={true}
+          smooth={false}
+          hashSpy={false}
           offset={-100}
           duration={500}
           delay={200}
-          isDynamic={true}
+          isDynamic={false}
           ignoreCancelEvents={false}
           className="navButtons addPad"
           id="nav3"
@@ -65,12 +72,12 @@ function NavBar() {
           activeClass="active"
           to="ScrollToContact"
           spy={false}
-          smooth={true}
-          hashSpy={true}
+          smooth={false}
+          hashSpy={false}
           offset={0}
           duration={500}
           delay={200}
-          isDynamic={true}
+          isDynamic={false}
           ignoreCancelEvents={false}
           className="navButtons addPad"
           id="nav4"

@@ -14,18 +14,16 @@ function Header() {
           <Link
             activeClass="active"
             to="ScrollToAboutMe"
-            spy={true}
-            smooth={true}
-            hashSpy={true}
+            spy={false}
+            smooth={false}
+            hashSpy={false}
             offset={-20}
             duration={500}
             delay={200}
-            isDynamic={true}
+            isDynamic={false}
             ignoreCancelEvents={false}
             style={{
               margin: "0 auto",
-              marginTop: ".5%",
-              fontFamily: "Raleway"
             }}
           >
             <img src={DownArrow} alt="Down Arrow" className="headerArrow"></img>
