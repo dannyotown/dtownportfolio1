@@ -10,6 +10,7 @@ function ContactMe() {
     email: "",
     subject: "",
     body: "",
+    message: "",
   });
   const onChangeHandler = (e) => {
     e.preventDefault();
@@ -21,7 +22,12 @@ function ContactMe() {
   const onSubmit = (e) => {
     setSpinner(true);
     e.preventDefault();
-    if (getForm.email === "" || getForm.subject === "" || getForm.body === "") {
+    if (
+      getForm.email === "" ||
+      getForm.subject === "" ||
+      getForm.body === "" ||
+      getForm.message !== ""
+    ) {
       setSpinner(false);
       MySwal.fire({
         icon: "error",
@@ -45,6 +51,7 @@ function ContactMe() {
             email: "",
             subject: "",
             body: "",
+            message: "",
           });
         })
         .catch(() => {
@@ -87,6 +94,13 @@ function ContactMe() {
               placeholder="Your Message"
               value={getForm.body}
               onChange={onChangeHandler}
+            />
+            <input
+              type="text"
+              value={getForm.message}
+              name="message"
+              onChange={onChangeHandler}
+              style={{ display: "none" }}
             />
             <button className="formButton" type="submit">
               {" "}
