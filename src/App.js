@@ -4,6 +4,8 @@ import HeaderAnimation from "./components/Header/HeaderAnimation";
 import Header from "./components/Header/Header";
 
 function App() {
+  const time = new Date().getTime();
+  console.log(time);
   return (
     <>
       <Header />

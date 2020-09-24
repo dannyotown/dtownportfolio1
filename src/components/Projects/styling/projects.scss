@@ -13,8 +13,14 @@
     .ProjectBox {
       display: flex;
       flex-flow: row;
+      @include for-tablet-and-smaller {
+        flex-flow: column;
+      }
       .ProjectLeftBox {
         width: 50%;
+        @include for-tablet-and-smaller {
+          width: 100%;
+        }
         @include displayFlex(flex, column, none, center);
         .ProjectCardHeader {
           margin: 2% 0% 2% 0%;
@@ -22,29 +28,43 @@
           font-weight: bolder;
         }
         .ProjectGif {
-          height: 18rem;
+          height: 17rem;
           width: auto;
+          @include for-tablet-and-smaller {
+            height: auto;
+            max-width: 100%;
+          }
         }
       }
       .ProjectRightBox {
         width: 50%;
+        @include for-tablet-and-smaller {
+          width: 100%;
+        }
         @include displayFlex(flex, column, none, center);
         .ProjectCardHeader {
           margin: 2% 0% 2% 0%;
         }
+
         .TechStack {
-          width: 75%;
+          width: 100%;
           @include displayFlex(flex, row nowrap, space-around, none);
           h5 {
-            font-size: 3rem;
+            font-size: 2.75rem;
             text-decoration: underline;
             color: $grey;
+            @include for-tablet-and-smaller {
+              font-size: 2.5rem;
+            }
           }
           li {
             font-size: 2rem;
             color: $grey;
             text-align: center;
             margin: 4.5% 0% 0% 0%;
+            @include for-tablet-and-smaller {
+              font-size: 1.5rem;
+            }
           }
         }
       }
@@ -56,11 +76,15 @@
         @include displayFlex(flex, none, center, none);
         a {
           background-color: $lightestBlack;
-          padding: 1%;
+          padding: 1rem;
           font-weight: bold;
           color: white;
           margin: 4% 0.5% 0 0.5%;
           text-decoration: none;
+          @include for-large-phone-and-smaller {
+            padding: 0.75rem;
+            font-size: 0.75rem;
+          }
         }
       }
     }
